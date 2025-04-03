@@ -1,0 +1,103 @@
+@import './variables.scss';
+
+.realisations-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f6f8;
+  padding-top: 80px;
+}
+
+.realisations-hero {
+  width: 100%;
+  background: linear-gradient(rgba($primary-color, 0.8), rgba($primary-color, 0.8)),
+              url('../assets/realisations-bg.jpg') center/cover;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $text-light;
+  padding: $spacing-xl;
+
+  &__title {
+    font-size: $font-size-4xl;
+    margin-bottom: $spacing-md;
+  }
+
+  &__description {
+    font-size: $font-size-lg;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}
+
+.realisations-grid {
+  width: 100%;
+  padding: $spacing-2xl 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.realisation-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 1.5rem;
+  }
+
+  &__title {
+    color: #2C3E50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  &__description {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+
+  &__link {
+    color: #E67E22;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: darken(#E67E22, 10%);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .realisations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .realisations-grid {
+    grid-template-columns: 1fr;
+    padding: $spacing-2xl 20px;
+  }
+
+  .realisation-card {
+    &__image {
+      height: 200px;
+    }
+  }
+} 

@@ -1,0 +1,18 @@
+{
+  "company": {
+    "name": "ArtisanPro Bâtiment",
+    "slogan": "Votre partenaire de confiance pour tous vos travaux",
+    "description": "ArtisanPro Bâtiment est une entreprise familiale spécialisée dans les travaux de rénovation et de construction. Forte de 15 ans d'expérience, notre équipe de professionnels qualifiés s'engage à réaliser vos projets avec le plus grand soin.",
+    "contact": {
+      "address": "123 Rue des Artisans, 75000 Paris",
+      "phone": "01 23 45 67 89",
+      "email": "contact@artisanpro.fr",
+      "hours": "Lundi - Vendredi: 8h - 18h"
+    },
+    "social": {
+      "facebook": "https://facebook.com/artisanpro",
+      "instagram": "https://instagram.com/artisanpro",
+      "linkedin": "https://linkedin.com/company/artisanpro"
+    }
+  }
+} 

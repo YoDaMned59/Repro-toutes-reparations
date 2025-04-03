@@ -1,0 +1,25 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Marie Dupont",
+      "comment": "Un travail exceptionnel ! L'équipe a su transformer notre cuisine avec un professionnalisme remarquable.",
+      "rating": 5,
+      "project": "Rénovation de cuisine"
+    },
+    {
+      "id": 2,
+      "name": "Jean Martin",
+      "comment": "Service rapide et efficace. Les travaux de plomberie ont été réalisés dans les délais impartis.",
+      "rating": 4,
+      "project": "Installation sanitaire"
+    },
+    {
+      "id": 3,
+      "name": "Sophie Leroy",
+      "comment": "Très satisfaite de la rénovation de notre salle de bain. Un travail de qualité avec des finitions impeccables.",
+      "rating": 5,
+      "project": "Rénovation salle de bain"
+    }
+  ]
+} 

@@ -1,0 +1,100 @@
+@import './variables.scss';
+
+.footer {
+  background-color: $primary-color;
+  color: $text-light;
+  padding: $spacing-2xl 0;
+
+  &__container {
+    max-width: $breakpoint-xl;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: $spacing-xl;
+  }
+
+  &__section {
+    h3 {
+      font-family: $font-primary;
+      font-size: $font-size-lg;
+      margin-bottom: $spacing-md;
+      color: $text-light;
+    }
+  }
+
+  &__description {
+    font-family: $font-secondary;
+    font-size: $font-size-sm;
+    line-height: 1.6;
+    color: $text-secondary;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-bottom: $spacing-sm;
+    font-family: $font-secondary;
+    font-size: $font-size-sm;
+  }
+
+  &__link {
+    color: $text-light;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: $spacing-md;
+  }
+
+  &__social-link {
+    color: $text-light;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  &__bottom {
+    margin-top: $spacing-2xl;
+    padding-top: $spacing-lg;
+    border-top: 1px solid rgba($text-light, 0.1);
+    text-align: center;
+  }
+
+  &__copyright {
+    font-family: $font-secondary;
+    font-size: $font-size-sm;
+    color: $text-secondary;
+  }
+}
+
+// Media queries pour la responsivité
+@media (max-width: $breakpoint-md) {
+  .footer {
+    &__container {
+      grid-template-columns: 1fr;
+      gap: $spacing-lg;
+    }
+
+    &__section {
+      text-align: center;
+    }
+
+    &__social {
+      justify-content: center;
+    }
+  }
+} 
