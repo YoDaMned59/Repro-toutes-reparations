@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artisan Pro Bâtiment</title>
     <script type="text/javascript">
-      // Gestion du rafraîchissement de page sur GitHub Pages
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
+      // Gestion du rafraîchissement de page
+      (function() {
+        const path = window.location.pathname;
+        const search = window.location.search;
+        const baseUrl = '/Repro-toutes-reparations';
+        
+        // Si on est à la racine, rediriger vers /accueil
+        if (path === baseUrl + '/' || path === baseUrl) {
+          window.location.replace(baseUrl + '/accueil' + search);
         }
-      }(window.location))
+        
+        // Pour les autres URLs, gérer le rafraîchissement
+        if (path !== baseUrl + '/') {
+          const url = window.location.href;
+          const hashedUrl = url.replace(baseUrl, baseUrl + '/#');
+          window.history.replaceState(null, null, hashedUrl);
+        }
+      })();
     </script>
   </head>
   <body>
