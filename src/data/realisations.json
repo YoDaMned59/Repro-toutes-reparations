@@ -4,21 +4,21 @@
       "id": 1,
       "title": "Rénovation de cuisine",
       "description": "Transformation complète d'une cuisine moderne avec des équipements haut de gamme et un design contemporain.",
-      "image": "/assets/images/renov-cuisine.webp",
+      "image": "/src/assets/images/renov-cuisine.webp",
       "alt": "Rénovation de cuisine moderne"
     },
     {
       "id": 2,
       "title": "Salle de bain moderne",
       "description": "Rénovation complète d'une salle de bain avec des matériaux de qualité et un style épuré.",
-      "image": "/assets/images/renov salle de bain.jpg",
+      "image": "/src/assets/images/renov salle de bain.jpg",
       "alt": "Rénovation de salle de bain moderne"
     },
     {
       "id": 3,
       "title": "Extension de maison",
       "description": "Réalisation d'une extension spacieuse et lumineuse, parfaitement intégrée à l'architecture existante.",
-      "image": "/assets/images/extension-maison.jpg",
+      "image": "/src/assets/images/extension-maison.jpg",
       "alt": "Extension de maison"
     }
   ]
